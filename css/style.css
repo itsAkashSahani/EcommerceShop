@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --main-color: #DD2F6E;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-custom {
+  background: var(--main-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav {
+  color: #fff;
+}
+
+.navbar-custom .navbar-nav .glyphicon,
+.navbar-custom .navbar-nav li a {
+  color: #fff;
+}
+
+.navbar-custom .navbar-nav .glyphicon:hover,
+.navbar-custom .navbar-nav li a:hover {
+  color: #000;
+}
+
+.carousel-item {
+  height: 75vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.7;
+}
+
+.carousel-caption {
+  bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.carousel-caption h5 {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  top: 2rem;
+}
+
+.carousel-caption .slider-btn {
+  margin-top: 30px;
+}
+
+.carousel-caption .slider-btn .btn {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-bottom: 100px;
+}
+
+.productsDisplay .product {
+  width: 100%;
+  margin-top: 5%;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.productsDisplay .product h2 {
+  background: var(--main-color);
+  color: #fff;
+  width: 200px;
+  font-size: 24px;
+  padding: 5px;
+  height: 40px;
+}
+
+.productsDisplay .product h2::after {
+  content: '';
+  border-top: 40px solid var(--main-color);
+  border-right: 40px solid transparent;
+  position: relative;
+  left: 48px;
+  top: 35px;
+}
+
+.product-top img {
+  width: 100%;
+}
+
+.product-bottom .fa {
+  color: #28a745;
+  font-size: 10px;
+}
+
+.product-bottom h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-bottom h3 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 0;
+  width: 70px;
+}
+
+.product-top:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+
+.overlay .fa {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  padding: 7px;
+  margin: 5%;
+  margin-bottom: 5%;
+}
+
+.overlay .btnNull {
+  margin: 10px;
+}
+
+.detail {
+  margin-top: 100px;
+}
+
+.pro-title h2{
+  color: #555;
+}
+
+.price {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.qty {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  height: 33px;
+  text-align: center;
+  width: 30px;
+}
+
+.cart {
+  background: var(--main-color) !important;
+  color: #fff;
+  font-size: 15px;
+  border: none !important;
+  margin-left: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
